@@ -7,6 +7,11 @@ TagManager:
   - Explosion
   - Rocket
   - Enemy
+  - Beemon
+  - Armor
+  - Crushroom
+  - Ground
+  - Ghost
   layers:
   - Default
   - TransparentFX
@@ -24,8 +29,8 @@ TagManager:
   - Background
   - Checkpoint
   - Allies
-  - 
-  - 
+  - PlayerFX
+  - EnemyRanges
   - 
   - 
   - 

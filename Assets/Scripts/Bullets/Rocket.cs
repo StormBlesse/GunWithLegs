@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 3f;
+    private float acceleration = 5f;
     public Rigidbody2D rb;
     public GameObject impactEffect;
 
@@ -15,7 +16,7 @@ public class Rocket : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo) // if rocket hits something, explode
     {
-        if (hitInfo.name != "Player") {
+        if (hitInfo.gameObject.layer != 8) {
             Destroy(gameObject);
             Instantiate(impactEffect, transform.position, transform.rotation);
         }
